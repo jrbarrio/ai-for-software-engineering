@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="container header-inner">
+      <h1 class="branding">Recipe Manager</h1>
+      <div class="header-actions">
+        <form class="search" action="#" method="get">
+          <input type="search" name="q" placeholder="Search recipes..." aria-label="Search recipes">
+        </form>
+        <button class="btn primary" type="button" aria-haspopup="dialog">Add Recipe</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters" aria-label="Filters">
+      <div class="chip-group">
+        <button class="chip is-active" type="button">All</button>
+        <button class="chip" type="button">Breakfast</button>
+        <button class="chip" type="button">Lunch</button>
+        <button class="chip" type="button">Dinner</button>
+        <button class="chip" type="button">Dessert</button>
+        <button class="chip" type="button">Vegetarian</button>
+      </div>
+    </section>
+
+    <section class="recipe-grid" aria-label="Recipes">
+      <article class="recipe-card">
+        <div class="recipe-media" role="img" aria-label="Avocado toast"></div>
+        <div class="recipe-body">
+          <h2 class="recipe-title">Avocado Toast</h2>
+          <p class="recipe-meta">Breakfast • 10 min</p>
+          <p class="recipe-desc">Crispy sourdough topped with smashed avocado, lemon, and chili flakes.</p>
+          <div class="recipe-actions">
+            <button class="btn ghost" type="button">View</button>
+            <button class="btn" type="button">Edit</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-media alt" role="img" aria-label="Pasta pomodoro"></div>
+        <div class="recipe-body">
+          <h2 class="recipe-title">Pasta Pomodoro</h2>
+          <p class="recipe-meta">Dinner • 25 min</p>
+          <p class="recipe-desc">Classic tomato-basil sauce tossed with al dente spaghetti.</p>
+          <div class="recipe-actions">
+            <button class="btn ghost" type="button">View</button>
+            <button class="btn" type="button">Edit</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="recipe-card">
+        <div class="recipe-media accent" role="img" aria-label="Chocolate chip cookies"></div>
+        <div class="recipe-body">
+          <h2 class="recipe-title">Choc Chip Cookies</h2>
+          <p class="recipe-meta">Dessert • 35 min</p>
+          <p class="recipe-desc">Soft and chewy center with crispy edges and lots of chocolate.</p>
+          <div class="recipe-actions">
+            <button class="btn ghost" type="button">View</button>
+            <button class="btn" type="button">Edit</button>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Recipe Manager</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
